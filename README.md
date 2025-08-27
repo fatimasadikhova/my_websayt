@@ -38,25 +38,12 @@ Visit my portfolio: [https://fatimasadikhova.github.io/portfolio](https://fatima
 
 - 📚 Learning Machine Learning & AI Engineering at Turing Academy
 - 🏢 Working as MS Office Instructor at Matrix Academy
-- 💼 Recently completed Data Analytics Internship at C4IR Azerbaijan
-- 🎓 Graduated from Miuul AI Summer Camp
 
-## 📱 Responsive Design
-
-The portfolio is fully responsive and optimized for:
-- 💻 Desktop computers
-- 📱 Mobile phones
-- 📟 Tablets
 
 ## 🔄 Updates
 
 This portfolio is regularly updated with new projects, experiences, and skills. Check back often to see my latest work!
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
 
 ⭐ **Star this repository if you found it helpful!**
 
