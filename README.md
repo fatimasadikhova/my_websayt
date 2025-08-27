@@ -25,7 +25,7 @@ I am a passionate Data Scientist specializing in Machine Learning & Analytics wi
 
 ## 🌐 Live Demo
 
-Visit my portfolio: [https://fatimasadikhova.github.io/portfolio](https://fatimasadikhova.github.io/portfolio)
+Visit my portfolio: [https://fatimasadikhova.github.io/my_websayt](https://fatimasadikhova.github.io/my_websayt)
 
 ## 📧 Contact Information
 
