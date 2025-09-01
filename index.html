@@ -257,6 +257,22 @@
             font-size: 17px;
             position: relative;
             z-index: 2;
+            margin-bottom: 25px;
+        }
+
+        .about-query {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #00d4aa;
+            font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+            font-weight: 400;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(0, 212, 170, 0.3);
+            letter-spacing: 0.025em;
+            font-size: 15px;
+            position: relative;
+            z-index: 2;
         }
         
         .skill-item, .lang-item {
@@ -428,34 +444,6 @@
             color: #00d4aa;
             border-color: rgba(0, 212, 170, 0.6);
         }
-            .container {
-                padding: 20px 10px;
-            }
-            
-            .header-section {
-                padding: 30px 20px;
-            }
-            
-            .section {
-                padding: 25px 20px;
-            }
-            
-            .name {
-                font-size: 28px;
-            }
-            
-            .title {
-                font-size: 18px;
-            }
-            
-            .section-title {
-                font-size: 20px;
-            }
-            
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
-        }
         
         .glow-effect {
             animation: glow 3s ease-in-out infinite alternate;
@@ -485,6 +473,168 @@
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: #00d4aa }
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .header-section {
+                padding: 30px 20px;
+                margin-bottom: 30px;
+            }
+            
+            .section {
+                padding: 25px 20px;
+                margin-bottom: 25px;
+            }
+            
+            .name {
+                font-size: 28px;
+            }
+            
+            .title {
+                font-size: 16px;
+                white-space: normal;
+                line-height: 1.4;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 12px;
+            }
+            
+            .contact-item {
+                font-size: 14px;
+                word-break: break-word;
+            }
+            
+            .profile-img-container {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+                font-size: 36px;
+            }
+            
+            .code-block, .about-query {
+                padding: 20px;
+                font-size: 13px;
+                overflow-x: auto;
+            }
+            
+            .about-me {
+                padding: 25px 20px;
+                font-size: 15px;
+            }
+            
+            .nav-container {
+                gap: 8px;
+            }
+            
+            .nav-item {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+            
+            .navigation-menu {
+                padding: 15px;
+            }
+            
+            .project-item {
+                padding: 25px 20px;
+            }
+            
+            .project-title {
+                font-size: 18px;
+            }
+            
+            .project-desc {
+                font-size: 15px;
+            }
+            
+            .tech-stack {
+                gap: 8px;
+            }
+            
+            .tech-tag {
+                font-size: 12px;
+                padding: 5px 8px;
+            }
+            
+            .experience-item, .edu-item, .course-item {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px 10px;
+            }
+            
+            .header-section {
+                padding: 25px 15px;
+            }
+            
+            .section {
+                padding: 20px 15px;
+            }
+            
+            .name {
+                font-size: 24px;
+            }
+            
+            .title {
+                font-size: 14px;
+            }
+            
+            .section-title {
+                font-size: 18px;
+                gap: 10px;
+            }
+            
+            .contact-item {
+                font-size: 13px;
+                gap: 8px;
+            }
+            
+            .nav-item {
+                padding: 6px 8px;
+                font-size: 11px;
+            }
+            
+            .code-block, .about-query {
+                font-size: 12px;
+                padding: 15px;
+            }
+            
+            .about-me {
+                font-size: 14px;
+                padding: 20px 15px;
+            }
+            
+            .project-title {
+                font-size: 16px;
+            }
+            
+            .project-desc {
+                font-size: 14px;
+            }
+            
+            .tech-tag {
+                font-size: 11px;
+                padding: 4px 6px;
+            }
         }
     </style>
 </head>
@@ -531,39 +681,47 @@
                 <p>Highly motivated Data Analytics professional with hands-on experience in SQL, Python, Power BI, and Excel.</p>
                 <p>Skilled in Machine Learning, Feature Engineering, and Statistical Analysis, with a strong ambition to grow as a Data Scientist & AI Engineer. Passionate about leveraging data to drive insights and solve real-world problems.</p>
             </div>
+            
+            <div class="about-query">
+                <span class="keyword">SELECT</span><br>
+                &nbsp;&nbsp;<span class="string">"Learn and Teach"</span> <span class="keyword">AS</span> <span class="variable">Mission</span>,<br>
+                &nbsp;&nbsp;<span class="string">"Python, SQL, ML, Statistics"</span> <span class="keyword">AS</span> <span class="variable">Top_Skills</span>,<br>
+                &nbsp;&nbsp;<span class="string">"Technical skills build the structure, soft skills bring it to life"</span> <span class="keyword">AS</span> <span class="variable">Philosophy</span><br>
+                <span class="keyword">FROM</span> <span class="class-name">Me</span>;
+            </div>
         </div>
 
+        <!-- Projects Section -->
         <div class="section" id="projects">
-    <div class="section-title">🚀 PROJECTS</div>
-        
-	    <div class="project-item">
-	        <div class="project-title">Bank Database Management System</div>
-	        <a href="https://github.com/fatimasadikhova/Bank-Database-System" target="_blank" class="project-link">🔗 View GitHub</a>
-	        <div class="project-desc">Comprehensive database system for banking operations with advanced SQL queries, data modeling, and transaction management. Includes customer management, account operations, and reporting features.</div>
-	        <div class="tech-stack">
-	            <span class="tech-tag">MS SQL</span>
-	            <span class="tech-tag">Python/Tkinter</span>
-	            <span class="tech-tag">GUI</span>
-	            <span class="tech-tag">Database Design</span>
-	            <span class="tech-tag">Data Modeling</span>
-	        </div>
-	    </div>
-				
-	    <div class="project-item">
-	        <div class="project-title">Power BI Projects</div>
-	        <a href="https://github.com/fatimasadikhova/PowerBI-Projects" target="_blank" class="project-link">🔗 View GitHub Repository</a>
-	        <div class="project-desc">This project focuses on creating interactive dashboards to analyze and visualize data from various sectors, including Sales, Manufacturing, and Human Resources (HR). It showcases my hands-on experience in data cleaning, data modeling, and using DAX to derive key business insights.</div>
-	        <div class="tech-stack">
-	            <span class="tech-tag">Power BI</span>
-	            <span class="tech-tag">Data Modeling</span>
-	            <span class="tech-tag">DAX</span>
-	            <span class="tech-tag">ETL</span>
-	            <span class="tech-tag">Data Visualization</span>
-	        </div>
-	    </div>
-	
-	</div>
-		
+            <div class="section-title">🚀 PROJECTS</div>
+            
+            <div class="project-item">
+                <div class="project-title">Bank Database Management System</div>
+                <a href="https://github.com/fatimasadikhova/Bank-Database-System" target="_blank" class="project-link">🔗 View GitHub</a>
+                <div class="project-desc">Comprehensive database system for banking operations with advanced SQL queries, data modeling, and transaction management. Includes customer management, account operations, and reporting features.</div>
+                <div class="tech-stack">
+                    <span class="tech-tag">MS SQL</span>
+                    <span class="tech-tag">Python/Tkinter</span>
+		    <span class="tech-tag">GUI</span>
+                    <span class="tech-tag">Database Design</span>
+                    <span class="tech-tag">Data Modeling</span>
+                </div>
+            </div>
+	    
+	    <div class="project-item">
+                <div class="project-title">Power BI</div>
+                <a href="https://github.com/fatimasadikhova/PowerBI-Projects" target="_blank" class="project-link">🔗 View GitHub</a>
+                <div class="project-desc">This project focuses on creating interactive dashboards to analyze and visualize data from various sectors, including Sales, Manufacturing, and Human Resources (HR). It showcases my hands-on experience in data cleaning, data modeling, and using DAX to derive key business insights.</div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">Data Modeling</span>
+		    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">ETL</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+
         <!-- Work Experience Section -->
         <div class="section" id="experience">
             <div class="section-title">💼 WORK EXPERIENCE</div>
@@ -629,135 +787,4 @@
                 <div class="skill-item">EDA & Data Visualization</div>
                 
                 <div class="comment">// Tools & Platforms</div>
-                <div class="skill-item">Power BI, Tableau, Excel Advanced</div>
-                <div class="skill-item">Jupyter Notebook, GitHub, Kaggle</div>
-            </div>
-        </div>
-
-        <!-- Soft Skills Section -->
-        <div class="section" id="soft-skills">
-            <div class="section-title">💡 SOFT SKILLS</div>
-            <div class="code-block">
-                <div class="skill-item">🧠 Analytical Thinking</div>
-                <div class="skill-item">🔧 Problem Solving</div>
-                <div class="skill-item">👥 Leadership & Teamwork</div>
-                <div class="skill-item">💬 Communication</div>
-                <div class="skill-item">🎨 Creativity & Research</div>
-                <div class="skill-item">⚡ Adaptability</div>
-            </div>
-        </div>
-
-        <!-- Languages Section -->
-        <div class="section" id="languages">
-            <div class="section-title">🌍 LANGUAGES</div>
-            <div class="code-block">
-                <div class="lang-item"><span class="variable">Azerbaijani</span>: <span class="string">"Native or bilingual proficiency"</span></div>
-                <div class="lang-item"><span class="variable">English</span>: <span class="string">"Professional working proficiency"</span></div>
-                <div class="lang-item"><span class="variable">Turkish</span>: <span class="string">"Full professional proficiency"</span></div>
-            </div>
-        </div>
-
-        <!-- Courses Section -->
-        <div class="section" id="courses">
-            <div class="section-title">📚 COURSES</div>
-            
-            <div class="course-item">
-                <div class="job-title">Machine Learning & AI Engineering</div>
-                <div class="company">Turing Academy</div>
-                <div class="date">July 2025 - Present</div>
-                <div class="code-block">
-                    <span class="variable">learning_path</span> = [<br>
-                    &nbsp;&nbsp;<span class="string">"EDA and Feature Engineering"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"Machine Learning Algorithms"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"Neural Networks and Deep Learning"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"Advanced AI Techniques"</span><br>
-                    ]
-                </div>
-            </div>
-        </div>
-
-        <!-- Training & Certifications Section -->
-        <div class="section" id="certifications">
-            <div class="section-title">🏆 TRAINING & CERTIFICATIONS</div>
-            
-            <div class="experience-item">
-                <div class="job-title">AI Summer Camp Graduate</div>
-                <div class="company">Miuul</div>
-                <div class="date">August 2025</div>
-                <div class="code-block">
-                    <span class="variable">certificate_details</span> = {<br>
-                    &nbsp;&nbsp;<span class="string">"id"</span>: <span class="string">"dcksbhkgt6"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"type"</span>: <span class="string">"AI & Machine Learning Intensive"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"format"</span>: <span class="string">"Online"</span><br>
-                    }
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-title">Data Analytics Internship Program</div>
-                <div class="company">C4IR Azerbaijan</div>
-                <div class="date">February - May 2025</div>
-                <div class="code-block">
-                    <span class="variable">program_info</span> = {<br>
-                    &nbsp;&nbsp;<span class="string">"location"</span>: <span class="string">"Baku, Azerbaijan"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"focus"</span>: <span class="string">"Data Analytics & Visualization"</span>,<br>
-                    &nbsp;&nbsp;<span class="string">"certification"</span>: <span class="string">"Completed Successfully"</span><br>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Typing animation reset
-        setTimeout(() => {
-            const typingElement = document.querySelector('.typing-animation');
-            if (typingElement) {
-                typingElement.style.animation = 'none';
-                typingElement.offsetHeight; // trigger reflow
-                typingElement.style.animation = null;
-            }
-        }, 4000);
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.nav-item').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Active navigation highlighting
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('.section');
-            const navItems = document.querySelectorAll('.nav-item');
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href') === `#${current}`) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-
-</html>
-
-
+                <div class="skill-item">Power BI, Tableau, Excel Advance
